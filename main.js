@@ -18,6 +18,9 @@ const heureOuvrable = (req, res, next) => {
 
 app.use(heureOuvrable);
 
+app.use(express.static('public'));
+
+
 app.use(routes);
 app.listen(3000 , ()=>{
     console.log(' server started at htttp://localhost:3000')
